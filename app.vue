@@ -2,21 +2,15 @@
   <div>
     <v-app>
       <NavigationBar />
-      <v-sheet
-        class="pa-4"
-        color="grey lighten-2"
-        :class="responsiveWidthClass"
-      >
-        <NuxtPage />
-      </v-sheet>
+      <NuxtPage />
     </v-app>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useDisplay } from "vuetify";
+import { useDisplay } from 'vuetify';
 const vuetify = useDisplay();
-console.log("vuetify:", vuetify);
+console.log('vuetify:', vuetify);
 
 // const responsiveWidthClass = computed(() => {
 //   const { xs, sm, md, lg, xl } = vuetify.display;
@@ -29,20 +23,4 @@ console.log("vuetify:", vuetify);
 //   };
 // });
 </script>
-<style scoped>
-.w-100 {
-  width: 100%;
-}
-.w-50 {
-  width: 50%;
-}
-.w-33 {
-  width: 33.33%;
-}
-.w-25 {
-  width: 25%;
-}
-.w-20 {
-  width: 20%;
-}
-</style>
+<style lang="scss" scoped></style>
