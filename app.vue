@@ -2,7 +2,9 @@
   <div>
     <v-app>
       <NavigationBar />
-      <NuxtPage />
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </v-app>
   </div>
 </template>
